@@ -8,16 +8,20 @@
     <version>1.0.0</version>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <checkstyle-maven-plugin.version>3.1.1</checkstyle-maven-plugin.version>
-        <puppycrawl-checkstyle.version>8.29</puppycrawl-checkstyle.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Properties Needed for Checkstyle to run -->
+        <checkstyle-maven-plugin.version>3.1.1</checkstyle-maven-plugin.version>
+        <puppycrawl-checkstyle.version>8.29</puppycrawl-checkstyle.version>
+        <!-- End of Properties Needed for Checkstyle to run -->
     </properties>
 
     <build>
         <plugins>
+            <!-- Plugin Needed for Checkstyle to run -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -46,10 +50,12 @@
                     </dependency>
                 </dependencies>
             </plugin>
+            <!-- End of Plugin Needed for Checkstyle to run -->
         </plugins>
     </build>
 
     <reporting>
+        <!-- (Optional) Reporting for Checkstyle -->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
