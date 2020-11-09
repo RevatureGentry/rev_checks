@@ -1,6 +1,6 @@
 # Getting Started
 * The _Maven Checkstyle Plugin_ is a programmatic means of validating source code style conformity
-* The `rev_checks.xml` describes the set of rules to which Checkstyle will be enforcing, with [Markdown examples found here](./examples)
+* The `rev_checks.xml` describes the set of rules which Checkstyle will be enforcing, with [Markdown examples found here](./examples)
 * You must apply the _`pom.xml` Setup_
     * The choice is yours to configure your IDE; It can assist with actions such as `auto-formatting`
     
